@@ -1,0 +1,108 @@
+body
+{
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+#hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("main.webp");
+    background-size: cover;
+    width: 1024px;
+    height: 576px;
+    border: 4px solid #4B687D;
+    border-radius: 4px;
+}
+#title
+{
+    background-color: #4B687D;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#description
+{
+    background-color: #B9E0F0;
+    padding: 5px 10px;
+}
+#locations
+{
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #4B687D;
+    width: 1024px;
+    height: 576px;
+}
+.loc-img
+{
+    width: 250px;
+    text-align: center;
+    border-radius: 50%;
+}
+.loc-description
+{
+    text-align: center;
+}
+.loc-nodes
+{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    border: 6px solid #B9E0F0;
+    padding: 7px;
+    border-radius: 10px;
+}
+.loc-nodes:hover
+{
+    font-size: larger;
+    background-color: aliceblue;
+}
+#card
+{
+    margin-top: 40px;
+    padding: 10px 50px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    width: 426px;
+    height: 240px;
+    background-color: #0D1116;
+    color: #B9E0F0;
+    border: 5px solid #B9E0F0;
+    border-radius: 50px;
+}
+#profile
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+    margin-top: 30px;
+}
+#head-wrapper
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#name
+{
+    margin-top: 90px;
+}
+#card:hover
+{
+    background-color: #B9E0F0;
+    color: #0D1116;
+    font-size: larger;
+    width: 640px;
+    height: 360px;
+}

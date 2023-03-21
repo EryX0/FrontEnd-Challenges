@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green
+{
+    color:#4ADF86;
+}
+#container
+{
+    box-sizing: border-box;
+    padding: 4em 3em;
+    width:550px;
+    height:550px;
+    background-color:#1F2937;
+}
+#content
+{
+    margin-bottom: 2em;
+}
+#container h1
+{
+    font-family: 'Karla';
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+}
+#container p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color:#D5D4D8
+}
+#lengh-div
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:300;
+    font-size: 1.2em;
+    line-height: 28px;
+    color:white;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+#lengh-input
+{
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: .2em 1em;
+}
+#lengh-input::placeholder
+{
+    box-sizing: border-box;
+    font-size: 0.8em;
+    color: #1C1C1C;
+    opacity: 1;
+}
+#lengh-error
+{
+    color: red;
+    margin-bottom: 1em;
+}
+#generate-password
+{
+    background: #10B981;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 9px 17px 9px 15px;
+    gap: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+#result
+{
+    border-top: 1px solid #2F3E53;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3em;
+}
+.password
+{
+    background: #273549;
+    border-radius: 6px;
+    width: 211px;
+    height: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #55F991;
+    border: none;
+    margin-top: 2em;
+    margin-right: .3em;
+}
+#copy-hint
+{
+    font-style: italic;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color:#D5D4D8
+}
