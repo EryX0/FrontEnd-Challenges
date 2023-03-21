@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="heading-container">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p>
+  </div>
+  <div class="form-container">
+    <div id="free-trial-info"><p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p></div>
+    <div class="form">
+      <input type="text" placeholder="First Name" class="input-el" id="firstname-input" required>
+      <p class="input-error-text" id="first-name-error" style="display: none;">First Name is either empty or Invalid</p>
+      <input type="text" placeholder="Last Name" class="input-el" id="lastname-input" required>
+      <p class="input-error-text" id="last-name-error" style="display: none;">Last Name is either empty or Invalid</p>
+      <input type="email" placeholder="Email Address" class="input-el" id="email-input" required>
+      <p class="input-error-text" id="email-error" style="display: none;">Email is either empty or Invalid</p>
+      <input type="password" placeholder="Password" class="input-el" id="password-input" required>
+      <p class="input-error-text" id="password-error" style="display: none;">Password is either empty or Invalid</p>
+      <button id="claim-trial-btn" onclick="validation()">CLAIM YOUR FREE TRIAL</button>
+      <p id="terms-agreement">By clicking the button, you are agreeing to our <span class="red-text">Terms and Services</span></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body
+{
+    background-image: url("images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.grid-container 
+{
+    height: 100%;
+    row-gap: 1.25em;
+    column-gap: 3.2em;
+    margin: 2em 4.05em 0 4.05em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 4fr .5fr;
+    grid-area: 
+    "logo logo"
+    "img text"
+    "icon icon";
+}
+.grid-1
+{
+    grid-area: logo;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.grid-1 img
+{
+    width: 12em;
+}
+.grid-2
+{
+    grid-area: logo;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.grid-3
+{
+    grid-area: img;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.grid-3 img
+{
+    width: 43em;
+}
+.grid-4
+{
+    padding-top: .9em;
+    grid-area: text;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.grid-4 h1
+{
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.grid-4 p
+{
+    font-size: 1.1em;
+}
+.grid-4 button
+{
+    background-color: white;
+    font-size: 1.1em;
+    color: hsl(257, 40%, 49%);
+    margin-top: 1em;
+    width: 11em;
+    height: 3.2em;
+    border-radius: 6.5em;
+    border: none;
+}
+.grid-4 button:hover
+{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.grid-5
+{
+    grid-area: icon;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.grid-6
+{
+    text-align: right;
+    grid-area: icon;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.social-icon
+{
+    padding: .55em;
+    width: 1.18em;
+    height: 1.18em;
+    border: .03em solid white;
+    border-radius: 50%;
+    margin-left: .7em;
+}
+.social-icon:hover
+{
+    border: .03em solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+@media only screen and (max-width: 480px) 
+{
+    body
+    {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .grid-container 
+    {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        margin: 0;
+        padding: 1.2em 1.2em 0 1.2em;
+        column-gap: 0;
+        row-gap: 3em;
+    }
+    .grid-1
+    {
+        grid-column: auto;
+        grid-row: 1/2;
+    }
+    .grid-1 img
+    {
+        width: 7em;
+    }
+    .grid-2
+    {
+        
+        grid-column: auto;
+    }
+    .grid-3
+    {
+        text-align: center;
+        padding: 0;
+        grid-column: auto;
+        grid-row: 2/3;
+    }
+    .grid-3 img
+    {
+        padding: 0;
+        width: 19em;
+    }
+    .grid-4
+    {
+        padding: 0;
+        text-align: center;
+        grid-column: auto;
+        grid-row: 3/4;
+    }
+    .grid-4 h1
+    {
+        font-size: 1.5em;
+    }
+    .grid-4 p
+    {
+        font-size: 1em;
+    }
+    .grid-4 button
+    {
+        width: 15em;
+        height: 3.1em;
+        font-size: .8em;
+    }
+    .grid-5
+    {
+        padding: 0;
+        grid-column: auto;
+    }
+    .grid-6
+    {
+        padding: 0;
+        text-align: center;
+        grid-column: auto;
+        grid-row: 4/5;
+    }
+    .social-icon
+    {
+        padding: .3em;
+        width: 1em;
+        height: 1em;
+        margin: 0 .3em;
+    }
+}

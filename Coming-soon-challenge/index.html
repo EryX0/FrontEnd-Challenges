@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <main>
+    <img src="images/logo.svg" id="logo-head" alt="logo of the website that says BING">
+    <h1>We are launching <span class="black">soon!</span></h1>
+    <p>Subscribe and get notified</p>
+    <div id="subscribe">
+      <div id="email-notify-container">
+        <input type="email" class="email-style" id="email-input" 
+        placeholder="Your email address..." 
+        required/>
+        <input type="submit" value="Notify Me" id="notify">
+      </div>
+      <p id="error"></p>
+    </div>
+    <img src="images/illustration-dashboard.png" alt="illustration of the website design" id="main-img">
+    <div id="social-footer">
+      <ion-icon name="logo-facebook"  class="social-icon"></ion-icon>
+      <ion-icon name="logo-twitter" class="social-icon"></ion-icon>
+      <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+    </div>
+    <footer>&copy; Copyright Ping. All rights reserved.</footer>
+  </main>
+<script src="index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

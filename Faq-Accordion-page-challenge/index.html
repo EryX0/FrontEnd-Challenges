@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main>
+    <img src="images/illustration-box-desktop.svg" alt="a box" id="box-img">
+    <div class="img-container">
+      <img src="images/illustration-woman-online-desktop.svg" alt="illustration of a woman staring at monitor screen" id="illustration-img">
+    </div>
+    <div id="questions-container">
+      <h1>FAQ</h1>
+      <div id="accordion">
+        <div class="qa">
+          <button class="q-btn" id="first-btn" onclick="toggleChild(this)">How many team members can I invite? <span><i class="arrow down"></i></span></button>
+          <div class="toggle">
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </div>
+        </div>
+        <div class="qa">
+          <button class="q-btn" id="second-btn" onclick="toggleChild(this)">What is the maximum file upload size? <span><i class="arrow down"></i></button>
+          <div class="toggle">
+            No more than 2GB. All files in your account must fit your allotted storage space. 
+          </div>
+        </div>
+        <div class="qa">
+          <button class="q-btn" id="third-btn" onclick="toggleChild(this)">How do I reset my password? <span><i class="arrow down"></i></button>
+          <div class="toggle">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+        </div>
+        <div class="qa">
+          <button class="q-btn" id="forth-btn" onclick="toggleChild(this)">Can I cancel my subscription? <span><i class="arrow down"></i></button>
+          <div class="toggle">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+        </div>
+        <div class="qa">
+          <button class="q-btn" id="fifth-btn" onclick="toggleChild(this)">Do you provide additional support? <span><i class="arrow down"></i></button>
+          <div class="toggle">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
